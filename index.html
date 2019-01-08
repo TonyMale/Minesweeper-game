@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "game-container" class="game-container sprite">
+        <span class="drop-down" id = "drop-menu">Игра</span>
+        <div id="game" class="game">           
+        </div>
+        <form id="options-form" style ="display: none;" action="">
+            <table id = "options" class="dialog" cellspacing = "0">
+                <tr class="dialog-title">
+                    <td style="padding: 3px;">Игра</td>
+                    <td colspan="3">
+                        <span id = "option-close" class="dialog-close" title="close this box">×</span>
+                    </td>
+                </tr>
+                <tr class = "dialog-bar">
+                    <td></td>
+                    <td>Ширина</td>
+                    <td>Высота</td>
+                    <td>Мины</td>
+                </tr>
+                <tr>
+                    <td style="padding: 3px;">
+                        <label for="">
+                            <input type="radio" name="field" id="beginner" value="beginner">
+                            <strong>Новичок</strong>
+                        </label>
+                    </td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">
+                            <input type="radio" name="field" id="intermediate" value="intermediate">
+                            <strong>Бывалый</strong>
+                        </label>
+                    </td>
+                    <td>16</td>
+                    <td>16</td>
+                    <td>40</td>
+                </tr>
+                <tr>                   
+                    <td >
+                        <label for="">
+                            <input type="radio" name="field" id="expert" value="expert" checked>
+                            <strong>Эксперт</strong>
+                        </label>
+                    </td>
+                    <td>16</td>
+                    <td>30</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">
+                            <input type="radio" name="field" id="special" value="special">
+                            <strong>Особый</strong>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" value="30" class="dialog-input" id="custom_width">
+                    </td>
+                    <td><input type="text" value="20" class="dialog-input" id="custom_height"></td>
+                    <td><input type="text" value="145" class="dialog-input" id="custom_mines"></td>
+                </tr>
+                <tr class="dialog-bar">
+                    <td  style="padding: 3px;">
+                        <input type="submit" value="Новая игра" class="dialog-text">
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+            </table>
+        </form>        
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
